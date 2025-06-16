@@ -9,8 +9,8 @@ services:
   app:
     build: ./backend
     container_name: backend_container
-    expose:
-      - "5000"
+    ports:
+      - "9900:9900"
     environment:
       - REDIS_HOST=redis
     restart: always
